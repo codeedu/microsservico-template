@@ -1,0 +1,11 @@
+steps:
+
+  # Requirements
+  - name: 'python:3.7'
+    entrypoint: python3
+    args: ['-m', 'pip', 'install', '-t', '.', '-r', 'requirements.txt']
+
+  # Running tests
+  - name: 'python:3.7'
+    entrypoint: python3
+    args: ['./manage.py', 'test']
