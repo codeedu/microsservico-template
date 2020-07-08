@@ -1,5 +1,5 @@
 db.sqlite3
-.idea/
-.docker/
+.idea/*
+.docker/pgdata
 *.pyc
 __pycache__
